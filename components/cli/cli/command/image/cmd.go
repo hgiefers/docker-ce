@@ -23,6 +23,7 @@ func NewImageCommand(dockerCli command.Cli) *cobra.Command {
 		NewPullCommand(dockerCli),
 		NewPushCommand(dockerCli),
 		NewSaveCommand(dockerCli),
+		NewFlashCommand(dockerCli),
 		NewTagCommand(dockerCli),
 		newListCommand(dockerCli),
 		newRemoveCommand(dockerCli),
